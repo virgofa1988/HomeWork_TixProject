@@ -1,0 +1,2267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TIX</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Start venoBox -->
+    <link rel="stylesheet" href="./library/venoBox/venobox.min.css">
+    <!-- Finish venoBox -->
+    <!-- Start slick_carousel -->
+     <link rel="stylesheet" href="./library/Slick_Carousel/slick.css">
+      <link rel="stylesheet" href="./library/Slick_Carousel/slick-theme.css">
+    <!-- End slick_carousel -->
+    
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Start Nguyen Anh Tuan -->
+<header>
+
+            <nav class="navbar navbar-expand-md bg-white navbar-light">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#"><img class="weblogo" src="./img/web-logo.png" alt=""></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link center" href="#">Lịch Chiếu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link center" href="#">Cụm Rạp</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link center" href="#">Tin Tức</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link center" href="#">Ứng Dụng</a>
+                </li>
+              </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link " href="#"><img class="avatar" src="./img/avatar.png"><span class="border-right px-2">Đăng Nhập</span></a>
+                </li>
+                 <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><img src="./img/location-header.png" alt="">
+                    Hồ Chí Minh
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+                    <a class="dropdown-item" href="#">Hà Nội</a>
+                    <a class="dropdown-item" href="#">Đà Nẵng</a>
+                    <a class="dropdown-item" href="#">Hải Phòng</a>
+                    <a class="dropdown-item" href="#">Biên Hoà</a>
+                    <a class="dropdown-item" href="#">Nha Trang</a>
+                    <a class="dropdown-item" href="#">Bình Dương</a>
+                    <a class="dropdown-item" href="#">Phan Thiết</a>
+                    <a class="dropdown-item" href="#">Hạ Long</a>
+                    <a class="dropdown-item" href="#">Cần Thơ</a>
+                    <a class="dropdown-item" href="#">Vũng Tàu</a>
+                    
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+
+     </header>
+
+     <!-- Start Carousel -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+                      </ul>
+
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="w-100 img-fluid" src="./img/Carousel_1.jpg" alt="Los Angeles">
+              <div class="overlay__player">
+                <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/gqcpChNYH10"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="w-100 img-fluid" src="./img/Carousel_2.jpg" alt="Chicago">
+              <div class="overlay__player">
+                <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+
+              </div>
+            </div>
+            
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+            <!-- hometool -->
+            <div class="container">
+              <div class="row hometool border" >
+                <div class="dropdown col-sm-3 border-right">
+                  <div type="button" class="dropdown-toggle phim_dropdown_item" data-toggle="dropdown">
+                    Phim
+                  </div>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Tom & Jerry</a>
+                    <a class="dropdown-item" href="#">Lừa Đểu Gặp Lừa Đảo - The Con-Heartist (C16)</a>
+                    <a class="dropdown-item" href="#">Tazza: Thần Bịp Jack Chột - Tazza: One Eyed Jack (C13)</a>
+                    <a class="dropdown-item" href="#">Tay Xạ Thủ - the Marksman (C16)</a>
+                    <a class="dropdown-item" href="#">Ainbo: Nữ Chiến Binh Amazon - Ainbo: Spirit of the Amazon</a>
+                    <a class="dropdown-item" href="#">Siêu Trộm Đường Phố</a>
+                    <a class="dropdown-item" href="#">Nam Sinh Số 11 - The Child Who Would Not Come (C18)</a>
+                    <a class="dropdown-item" href="#">Thợ Săn Quái Vật - Monster Hunter (C13)</a>
+                    <a class="dropdown-item" href="#">Cua Lại Vợ Bầu - Win My Baby Back (C16)</a>
+                    <a class="dropdown-item" href="#">Thuyền Trưởng Răng Kiếm và Viên Kim Cương Ma Thuật</a>
+                    <a class="dropdown-item" href="#">Căn Phòng Ma Ám</a>
+                  </div>
+                </div>
+                <div class="dropdown col-sm-3 border-right">
+                  <div type="button" class="dropdown-toggle phim_dropdown_item" data-toggle="dropdown">
+                    Rạp
+                  </div>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                  </div>
+                </div>
+                <div class="dropdown col-sm-2 border-right">
+                  <div type="button" class="dropdown-toggle phim_dropdown_item" data-toggle="dropdown">
+                    Ngày Xem
+                  </div>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                  </div>
+                </div>
+                <div class="dropdown col-sm-2 border-right">
+                  <div type="button" class="dropdown-toggle phim_dropdown_item" data-toggle="dropdown">
+                    Suất Chiếu
+                  </div>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                  </div>
+                </div>
+                <div class="col-sm-2">
+                  <button class="btn btn-dark btn_muavengay">Mua Vé Ngay</button>
+                </div>
+                
+            </div>
+            </div>
+            
+        </div>
+
+     <!-- End Carousel -->
+
+     <!-- Star Slick Carousel_Sap Chieu -->
+<div id="movie_Show">
+  <div class="container moviecoming_showing ">
+    <!-- NavTab Sap Chieu/ Dang Chieu -->
+      <ul class="nav nav-tabs mb-5">
+        
+        <li class="nav-item">
+          <a class="nav-link .nav-justified active" data-toggle="tab" href="#menu1">Đang Chiếu</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link .nav-justified" data-toggle="tab" href="#menu2">Sắp Chiếu</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content container">
+        
+        <div class="tab-pane container my_slick fade row m-auto" id="menu1">
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_1.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="P">P</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_2.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div> 
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_3.jpg" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="P">P</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_4.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_5.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_6.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_7.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="P">P</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_8.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div> 
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_9.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_10.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div> 
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_11.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div> 
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_12.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_13.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_14.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_15.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_16.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>                                                             
+                     
+        </div>
+        <div class="tab-pane container my_slick2 fade row m-auto" id="menu2">
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_1.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_2.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div> 
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_3.jpg" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_4.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_5.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_6.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_7.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_8.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div> 
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_9.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_10.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div> 
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_11.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+                
+            </div>
+            </div> 
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_12.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_13.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_14.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_15.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>
+            <div class="movie_item">
+              <img class="img-fluid m-auto container"  src="./img/Slick_movie_16.png" alt="">
+            <div class="movie_info container text-left mt-2">
+                <div class="movie_name">
+                 <p><span class="c16">C16</span>
+                  Nữ Chiến Binh Amazon </p> 
+                  </div>
+                <div class="movie_length">120 Phút</div>
+                <span class="movie_rating">
+                  <p>7.7</p>
+                  <p class="movie_stars d-flex">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    <img src="./img/star1.png" alt="">
+                    
+                  </p>
+                </span>
+                  <div class="showHover">
+                  <div class="hoverDetail">
+                    <a data-vbtype="video" data-autoplay="true" href="https://youtu.be/NWEe2BGhOUA"
+                  class="btn btn_playtrailer venobox"><img src="./img/play-video.png" alt="playbtn"></a>
+                  </div>
+                  <button class="btn btnMuaVe text-white">Mua Vé</button>
+                </div>
+            </div>
+            </div>   
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+     <!-- End Slick Carousel_Sap Chieu -->
+
+    <!-- End Nguyen Anh Tuan -->
+
+
+    <div class="container">
+      <div id="schedule__wrapper" class="section__blanks">
+        <ul class="nav-tabs" id="cinema__list">
+          <li class="active">
+            <a href="">
+              <img src="./imgs/bhd_cineplex_logo.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./imgs/cinestar_logo.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./imgs/dongda_cinema_logo.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./imgs/mega_gs_logo.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./imgs/dcine_logo.jpg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./imgs/lotte_cinema_logo.png" alt="" />
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content float-left" id="cinema__address">
+          <div class="cinema__adress__content">
+            <div class="cinema__each active">
+              <img
+                src="./imgs/bhd/bhd-star-bitexco-16105952137769.png"
+                alt=""
+                class="cinema__img"
+              />
+              <div class="cinema__info">
+                <span class="cinema__name">
+                  <span class="bhd__color">BHD Star</span> - Bitexco
+                </span>
+                <span class="cinema__address__info">
+                  L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                </span>
+                <span class="detail__link">
+                  <a href="">[chi tiết]</a>
+                </span>
+              </div>
+            </div>
+            <div class="cinema__each">
+              <img
+                src="./imgs/bhd/bhd-star-vincom-thao-dien-16105955634183.png"
+                alt=""
+                class="cinema__img"
+              />
+              <div class="cinema__info">
+                <span class="cinema__name">
+                  <span class="bhd__color">BHD Star</span> - Vincom Thảo Điền
+                </span>
+                <span class="cinema__address__info">
+                  L5-Megamall, 159 XL Hà Nội, Q.2
+                </span>
+                <span class="detail__link">
+                  <a href="">[chi tiết]</a>
+                </span>
+              </div>
+            </div>
+            <div class="cinema__each">
+              <img
+                src="./imgs/bhd/bhd-star-vincom-3-2-16105957596860.png"
+                alt=""
+                class="cinema__img"
+              />
+              <div class="cinema__info">
+                <span class="cinema__name">
+                  <span class="bhd__color">BHD Star</span> - Vincom 3/2
+                </span>
+                <span class="cinema__address__info">
+                  L5-Vincom 3/2, 3C Đường 3/2, Q.10
+                </span>
+                <span class="detail__link">
+                  <a href="">[chi tiết]</a>
+                </span>
+              </div>
+            </div>
+            <div class="cinema__each">
+              <img
+                src="./imgs/bhd/bhd-star-pham-hung-16105959230642.png"
+                alt=""
+                class="cinema__img"
+              />
+              <div class="cinema__info">
+                <span class="cinema__name">
+                  <span class="bhd__color">BHD Star</span> - Phạm Hùng
+                </span>
+                <span class="cinema__address__info">
+                  L4-Satra Phạm Hùng, C6/27 Phạm Hùng, Bình Chánh
+                </span>
+                <span class="detail__link">
+                  <a href="">[chi tiết]</a>
+                </span>
+              </div>
+            </div>
+            <div class="cinema__each">
+              <img
+                src="./imgs/bhd/bhd-star-vincom-le-van-viet-16105962051265.png"
+                alt=""
+                class="cinema__img"
+              />
+              <div class="cinema__info">
+                <span class="cinema__name">
+                  <span class="bhd__color">BHD Star</span> - Lê Văn Việt
+                </span>
+                <span class="cinema__address__info">
+                  L4-Vincom Plaza, 50 Lê Văn Việt, Q.9
+                </span>
+                <span class="detail__link">
+                  <a href="">[chi tiết]</a>
+                </span>
+              </div>
+            </div>
+            <div class="cinema__each">
+              <img
+                src="./imgs/bhd/bhd-star-vincom-quang-trung-16105960645760.png"
+                alt=""
+                class="cinema__img"
+              />
+              <div class="cinema__info">
+                <span class="cinema__name">
+                  <span class="bhd__color">BHD Star</span> - Quang Trung
+                </span>
+                <span class="cinema__address__info">
+                  B1-Vincom QT, 190 Quang Trung, Gò Vấp
+                </span>
+                <span class="detail__link">
+                  <a href="">[chi tiết]</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="movie__list">
+          <div class="movie__list__wrapper">
+            <div class="movie__wrapper">
+              <div class="movie__info">
+                <img
+                  src="./imgs/movies/tom-jerry-16127706651597_60x60.png"
+                  alt=""
+                  class="movie__img"
+                />
+                <div class="movie__detail">
+                  <p>
+                    <span class="age__typeC age__typeP">P</span>
+                    <span class="movie__title">Tom & Jerry</span>
+                  </p>
+                  <p>100 phút - TIX 7.6 - IMDb 0</p>
+                </div>
+              </div>
+              <div class="movie__session">
+                <div class="type__time__wrapper">
+                  <div class="type">2D Digital</div>
+                  <div class="sessions">
+                    <a class="movie__time" href="">
+                      <span class="start__time">15:25</span> ~ 17:05
+                    </a>
+                    <a class="movie__time" href="">
+                      <span class="start__time">17:20</span> ~ 19:00
+                    </a>
+                    <a class="movie__time" href="">
+                      <span class="start__time">19:15</span> ~ 20:55
+                    </a>
+                    <a class="movie__time" href="">
+                      <span class="start__time">20:20</span> ~ 22:00
+                    </a>
+                    <a class="movie__time" href="">
+                      <span class="start__time">21:10</span> ~ 22:50
+                    </a>
+                    <a class="movie__time" href="">
+                      <span class="start__time">22:00</span> ~ 23:40
+                    </a>
+                    <a class="movie__time" href="">
+                      <span class="start__time">23:05</span> ~ 00:45
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="movie__wrapper">
+              <div class="movie__info">
+                <img
+                  src="./imgs/movies/kieu-16137205526238_60x60.png"
+                  alt=""
+                  class="movie__img"
+                />
+                <div class="movie__detail">
+                  <p>
+                    <span class="age__typeC">C18</span>
+                    <span class="movie__title">Kiều @</span>
+                  </p>
+                  <p>0 phút - TIX 7.6 - IMDb 0</p>
+                </div>
+              </div>
+              <div class="movie__session">
+                <div class="type__time__wrapper">
+                  <div class="type">2D Digital</div>
+                  <div class="sessions">
+                    <a class="movie__time" href="">
+                      <span class="start__time">15:10</span> ~
+                    </a>
+                    <a class="movie__time" href="">
+                      <span class="start__time">17:30</span> ~
+                    </a>
+                    <a class="movie__time" href="">
+                      <span class="start__time">19:50</span> ~
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="movie__wrapper">
+              <div class="movie__info">
+                <img
+                  src="./imgs/movies/tazza-than-bip-jack-chot-tazza-one-eyed-jack-c13-16127716280582_60x60.png"
+                  alt=""
+                  class="movie__img"
+                />
+                <div class="movie__detail">
+                  <p>
+                    <span class="age__typeC">C13</span>
+                    <span class="movie__title"
+                      >Tazza: Thần Bịp Jack Chột - Tazza: One Eyed Jack
+                    </span>
+                  </p>
+                  <p>139 phút - TIX 7.9 - IMDb 0</p>
+                </div>
+              </div>
+              <div class="movie__session">
+                <div class="type__time__wrapper">
+                  <div class="type">2D Digital</div>
+                  <div class="sessions">
+                    <a class="movie__time" href="">
+                      <span class="start__time">17:00</span> ~ 19:19
+                    </a>
+                    <a class="movie__time" href="">
+                      <span class="start__time">19:25</span> ~ 21:44
+                    </a>
+                    <a class="movie__time" href="">
+                      <span class="start__time">22:15</span> ~ 00:34
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="movie__wrapper">
+              <div class="movie__info">
+                <img
+                  src="./imgs/movies/lua-deu-gap-lua-dao-the-con-heartist-c16-16082739589858_60x60.png"
+                  alt=""
+                  class="movie__img"
+                />
+                <div class="movie__detail">
+                  <p>
+                    <span class="age__typeC">C16</span>
+                    <span class="movie__title"
+                      >Lừa Đểu Gặp Lừa Đảo - The Con-Heartist
+                    </span>
+                  </p>
+                  <p>128 phút - TIX 8.8 - IMDb 0</p>
+                </div>
+              </div>
+              <div class="movie__session">
+                <div class="type__time__wrapper">
+                  <div class="type">2D Digital</div>
+                  <div class="sessions">
+                    <a class="movie__time" href="">
+                      <span class="start__time">16:10</span> ~ 18:18
+                    </a>
+                    <a class="movie__time" href="">
+                      <span class="start__time">19:35</span> ~ 21:43
+                    </a>
+                    <a class="movie__time" href="">
+                      <span class="start__time">22:00</span> ~ 00:08
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="news" class="section__blanks">
+        <ul class="nav nav-tabs navCenter">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#news__dienanh"
+              >Điện Ảnh 24h</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#news__review"
+              >Review</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#news__khuyenmai"
+              >Khuyến Mãi</a
+            >
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane container active" id="news__dienanh">
+            <div class="row" id="news__2">
+              <div class="col-md-6 news__2__item">
+                <a href="">
+                  <img
+                    src="./imgs/news/dienanh/khai-truong-rap-xin-gia-ngon-chuan-xi-tai-sai-gon-16111317082644.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="content__wrapper">
+                  <a href="" class="news__title">
+                    Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn
+                  </a>
+                  <p class="news__content">
+                    Cư dân nơi khác đang sắp “gato nổ mắt” với dân Sài Thành khi
+                    sắp tới đây thành phố HCM sẽ chào đón một rạp chiếu phim
+                    mang phong cách Artistic Urban Lifestyle đầu tiên tại Việt
+                    Nam!
+                  </p>
+                </div>
+                <div class="icon__wrapper">
+                  <span class="far fa-thumbs-up icon"><span>2</span></span>
+                  <span class="far fa-comment-alt icon"><span>0</span></span>
+                </div>
+              </div>
+              <div class="col-md-6 news__2__item">
+                <a href="">
+                  <img
+                    src="./imgs/news/dienanh/boc-tem-to-hop-giai-tri-moi-toanh-cua-gioi-ha-thanh-16056938333773.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="" class="news__title">
+                  “Bóc tem” tổ hợp giải trí mới toanh của giới Hà Thành
+                </a>
+                <p class="news__content">
+                  Vào đúng ngày Nhà giáo Việt Nam 20/11, khu vui chơi sống ảo
+                  độc-lạ-chill nhất từ trước đến giờ sẽ chính thức khai trương
+                  tại 360 Giải Phóng!
+                </p>
+                <div class="icon__wrapper">
+                  <span class="far fa-thumbs-up icon"><span>2</span></span>
+                  <span class="far fa-comment-alt icon"><span>0</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="news__3">
+              <div class="col-md-4 news__3__item">
+                <a href="">
+                  <img
+                    src="./imgs/news/dienanh/tiec-trang-mau-chinh-thuc-can-moc-100-ty-chi-sau-2-tuan-cong-chieu-16043752411629.png"
+                    alt=""
+                  />
+                </a>
+                <div class="content__wrapper">
+                  <a href="" class="news__title">
+                    Tiệc Trăng Máu chính thức cán mốc 100 tỷ chỉ sau 2 tuần công
+                    chiếu
+                  </a>
+                  <p class="news__content">
+                    Sau 2 tuần ra mắt, Tiệc Trăng Máu chính thức gia nhập câu
+                    lạc bộ phim điện ảnh đạt 100 tỷ đồng doanh thu phòng vé. Dàn
+                    ngôi sao “bạc tỷ” của phim cũng lần đầu tiên hội tụ đầy đủ
+                    trong một khung hình để ăn mừng thành tích ấn tượng của tác
+                    phẩm.
+                  </p>
+                </div>
+                <div class="icon__wrapper">
+                  <span class="far fa-thumbs-up icon"><span>2</span></span>
+                  <span class="far fa-comment-alt icon"><span>0</span></span>
+                </div>
+              </div>
+              <div class="col-md-4 news__3__item">
+                <a href="">
+                  <img
+                    src="./imgs/news/dienanh/ngo-thanh-van-chinh-thuc-khoi-dong-cuoc-thi-thiet-ke-trang-phuc-cho-sieu-anh-hung-dau-tien-cua-viet-nam-vinaman-16041597587981.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="content__wrapper">
+                  <a href="" class="news__title">
+                    NGÔ THANH VÂN CHÍNH THỨC KHỞI ĐỘNG CUỘC THI THIẾT KẾ TRANG
+                    PHỤC CHO SIÊU ANH HÙNG ĐẦU TIÊN CỦA VIỆT NAM – VINAMAN
+                  </a>
+                  <p class="news__content">
+                    Chiều tối ngày 30-10-2020, Ngô Thanh Vân và Studio68 đã
+                    chính thức phát động cuộc thi thiết kế trang phục cho siêu
+                    anh hùng VINAMAN với tổng giá trị giải thưởng lên đến 60
+                    triệu đồng.
+                  </p>
+                </div>
+                <div class="icon__wrapper">
+                  <span class="far fa-thumbs-up icon"><span>2</span></span>
+                  <span class="far fa-comment-alt icon"><span>0</span></span>
+                </div>
+              </div>
+              <div class="col-md-4 news__3__item__other">
+                <div class="row">
+                  <div class="col-md-2 other__img">
+                    <a href="">
+                      <img
+                        src="imgs/news/dienanh/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122262210.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-9 other__title">
+                    <p>
+                      [ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu phẩm kinh dị
+                      Antebellum: Bẫy Thực Tại Kinh Hoàng
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2 other__img">
+                    <a href="">
+                      <img
+                        src="imgs/news/dienanh/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503793246.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-9 other__title">
+                    <p>
+                      Ác Quỷ Đối Đầu soán ngôi Peninsula, trở thành phim đứng
+                      đầu doanh thu tại Hàn Quốc mùa dịch
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2 other__img">
+                    <a href="">
+                      <img
+                        src="imgs/news/dienanh/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122262210.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-9 other__title">
+                    <p>
+                      Truy Cùng Giết Tận - Cuộc tái ngộ của hai 'ông hoàng phòng
+                      vé' xứ Hàn
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2 other__img">
+                    <a href="">
+                      <img
+                        src="imgs/news/dienanh/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503793246.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-9 other__title">
+                    <p>
+                      Dàn mỹ nhân trong thế giới điện ảnh của quái kiệt
+                      Christopher Nolan
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="news__review">
+            <div class="row" id="news__2">
+              <div class="col-md-6 news__2__item">
+                <a href="">
+                  <img
+                    src="./imgs/news/review/review-tan-tich-quy-am-relic-ba-the-he-va-moi-lien-ket-15965255784224.png"
+                    alt=""
+                  />
+                </a>
+                <div class="content__wrapper">
+                  <a href="" class="news__title">
+                    Review: Tàn Tích Quỷ Ám (Relic) - Ba thế hệ và mối liên kết
+                  </a>
+                  <p class="news__content">
+                    Điểm nhấn của phim kinh dị năm 2020 chính là Tàn Tích Quỷ Ám
+                  </p>
+                </div>
+                <div class="icon__wrapper">
+                  <span class="far fa-thumbs-up icon"><span>0</span></span>
+                  <span class="far fa-comment-alt icon"><span>0</span></span>
+                </div>
+              </div>
+              <div class="col-md-6 news__2__item">
+                <a href="">
+                  <img
+                    src="./imgs/news/review/review-dinh-thu-oan-khuat-ghost-of-war-15965120886610.png"
+                    alt=""
+                  />
+                </a>
+                <a href="" class="news__title">
+                  Review: Dinh Thự Oan Khuất (Ghost Of War)
+                </a>
+                <p class="news__content">
+                  Tuy là một bộ phim có chất lượng tốt, nhưng có vẻ Dinh Thự Oan
+                  Khuất vẫn chưa đủ để đem khán giả trở lại phòng vé!
+                </p>
+                <div class="icon__wrapper">
+                  <span class="far fa-thumbs-up icon"><span>0</span></span>
+                  <span class="far fa-comment-alt icon"><span>0</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="news__3">
+              <div class="col-md-4 news__3__item">
+                <a href="">
+                  <img
+                    src="./imgs/news/review/blackkklansman-coc-nuoc-lanh-de-nguoi-my-thuc-tinh-15910862294165.png"
+                    alt=""
+                  />
+                </a>
+                <div class="content__wrapper">
+                  <a href="" class="news__title">
+                    ‘BlacKkKlansman’ - cốc nước lạnh để người Mỹ thức tỉnh
+                  </a>
+                  <p class="news__content">
+                    Tác phẩm nhận đề cử Phim truyện xuất sắc tại Oscar 2019 của
+                    đạo diễn Spike Lee là một lát cắt nữa về nạn phân biệt chủng
+                    tộc - nỗi đau gây nhức nhối nước Mỹ cho tới tận hôm nay.
+                  </p>
+                </div>
+                <div class="icon__wrapper">
+                  <span class="far fa-thumbs-up icon"><span>2</span></span>
+                  <span class="far fa-comment-alt icon"><span>0</span></span>
+                </div>
+              </div>
+              <div class="col-md-4 news__3__item">
+                <a href="">
+                  <img
+                    src="./imgs/news/review/american-sniper-chinh-nghia-hay-phi-nghia-15905660338111.png"
+                    alt=""
+                  />
+                </a>
+                <div class="content__wrapper">
+                  <a href="" class="news__title">
+                    American Sniper - Chính nghĩa hay phi nghĩa?
+                  </a>
+                  <p class="news__content">
+                    American Sniper khắc họa một tay súng bắn tỉa “huyền thoại”
+                    của Hải quân Mỹ với 4 lần tham chiến ở Trung Đông. Câu
+                    chuyện phim chậm rãi đưa người xem qua từng thời khắc khác
+                    nhau của Kyle, từ thửa nhỏ, thiếu niên, rồi gia nhập quân
+                    đội, rồi tham chiến. Từng khoảnh khắc bắt đầu nhẹ nhàng...
+                  </p>
+                </div>
+                <div class="icon__wrapper">
+                  <span class="far fa-thumbs-up icon"><span>2</span></span>
+                  <span class="far fa-comment-alt icon"><span>0</span></span>
+                </div>
+              </div>
+              <div class="col-md-4 news__3__item__other">
+                <div class="row">
+                  <div class="col-md-2 other__img">
+                    <a href="">
+                      <img
+                        src="imgs/news/review/review-spider-man-into-the-spider-vesre-15886520889426.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-9 other__title">
+                    <p>Review: Spider-Man: Into The Spider-Vesre</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2 other__img">
+                    <a href="">
+                      <img
+                        src="imgs/news/review/covid-19-la-ban-chinh-thuc-cua-mev-1-phim-contagion-2011-15843496198482.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-9 other__title">
+                    <p>
+                      COVID-19 là bản chính thức của MEV-1 phim contagion (2011)
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2 other__img">
+                    <a href="">
+                      <img
+                        src="imgs/news/review/review-sieu-ve-si-so-vo-giai-cuu-tong-thong-chua-bao-gio-lay-loi-va-hai-huoc-den-the-15840925506832.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-9 other__title">
+                    <p>
+                      [Review] Siêu Vệ Sĩ Sợ Vợ - Giải cứu Tổng thống chưa bao
+                      giờ lầy lội và hài hước đến thế
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2 other__img">
+                    <a href="">
+                      <img
+                        src="imgs/news/review/review-bloodshot-mo-man-an-tuong-cho-vu-tru-sieu-anh-hung-valiant-15840731141389.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-9 other__title">
+                    <p>
+                      [Review] Bloodshot - Mở màn ấn tượng cho Vũ trụ Siêu anh
+                      hùng Valiant
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane container fade" id="news__khuyenmai">
+            <div class="row" id="news__2">
+              <div class="col-md-6 news__2__item">
+                <a href="">
+                  <img
+                    src="./imgs/news/khuyenmai/bhd-59k-ve-ca-tuan-16088081864967.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="content__wrapper">
+                  <a href="" class="news__title"> BHD 59K/VÉ CẢ TUẦN !!! </a>
+                  <p class="news__content">
+                    Tận hưởng Ưu Đãi lên đến 3 VÉ BHD Star mỗi tuần chỉ với giá
+                    59k/vé khi mua vé trên TIX hoặc Mục Vé Phim trên ZaloPay.
+                  </p>
+                </div>
+                <div class="icon__wrapper">
+                  <span class="far fa-thumbs-up icon"><span>2</span></span>
+                  <span class="far fa-comment-alt icon"><span>0</span></span>
+                </div>
+              </div>
+              <div class="col-md-6 news__2__item">
+                <a href="">
+                  <img
+                    src="./imgs/news/khuyenmai/tix-1k-ve-ngai-chi-gia-ve-16045662877511.jpg"
+                    alt=""
+                  />
+                </a>
+                <a href="" class="news__title"> TIX 1K/VÉ NGẠI CHI GIÁ VÉ </a>
+                <p class="news__content">
+                  Đồng giá 1k/vé cả tuần tất cả các rạp trên TIX + Nhận thêm 02
+                  voucher thanh toán ZaloPay thả ga
+                </p>
+                <div class="icon__wrapper">
+                  <span class="far fa-thumbs-up icon"><span>2</span></span>
+                  <span class="far fa-comment-alt icon"><span>0</span></span>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="news__3">
+              <div class="col-md-4 news__3__item">
+                <a href="">
+                  <img
+                    src="./imgs/news/khuyenmai/dong-gia-1k-ve-khi-mua-ve-qua-tix-16010092946804.png"
+                    alt=""
+                  />
+                </a>
+                <div class="content__wrapper">
+                  <a href="" class="news__title">
+                    ĐỒNG GIÁ 1K/VÉ KHI MUA VÉ QUA TIX
+                  </a>
+                  <p class="news__content">
+                    ĐỒNG GIÁ 1K/VÉ KHI MUA VÉ QUA TIX Hành trình tìm Ròm và Phúc
+                    chỉ với 1k cả tuần + nhận thêm 02 voucher khi đặt vé qua
+                    TIX.
+                  </p>
+                </div>
+                <div class="icon__wrapper">
+                  <span class="far fa-thumbs-up icon"><span>2</span></span>
+                  <span class="far fa-comment-alt icon"><span>0</span></span>
+                </div>
+              </div>
+              <div class="col-md-4 news__3__item">
+                <a href="">
+                  <img
+                    src="./imgs/news/khuyenmai/bhd-star-ve-chi-59-000d-ca-tuan-15937622264546.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="content__wrapper">
+                  <a href="" class="news__title">
+                    BHD STAR VÉ CHỈ 59.000Đ CẢ TUẦN!
+                  </a>
+                  <p class="news__content">
+                    Tận hưởng Ưu Đãi lên đến 3 VÉ BHD Star mỗi tuần chỉ với giá
+                    59k/vé khi mua vé trên TIX và thanh toán bằng ZaloPay hoặc
+                    Mục Vé Phim trên ZaloPay.
+                  </p>
+                </div>
+                <div class="icon__wrapper">
+                  <span class="far fa-thumbs-up icon"><span>2</span></span>
+                  <span class="far fa-comment-alt icon"><span>0</span></span>
+                </div>
+              </div>
+              <div class="col-md-4 news__3__item__other">
+                <div class="row">
+                  <div class="col-md-2 other__img">
+                    <a href="">
+                      <img
+                        src="imgs/news/khuyenmai/beta-cineplex-tro-lai-voi-hang-loat-uu-dai-lon-15889408112010.png"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-9 other__title">
+                    <p>Beta Cineplex trở lại với hàng loạt ưu đãi lớn</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2 other__img">
+                    <a href="">
+                      <img
+                        src="imgs/news/khuyenmai/123phim-thu-6-khong-den-toi-uu-dai-huy-diet-11k-ve-anh-trai-yeu-quai-15746757294099.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-9 other__title">
+                    <p>
+                      [123Phim] Thứ 6 Không Đen Tối - Ưu đãi huỷ diệt 11k/vé Anh
+                      Trai Yêu Quái
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2 other__img">
+                    <a href="">
+                      <img
+                        src="imgs/news/khuyenmai/123phim-nhap-ma-psm30k-giam-ngay-30k-khi-dat-ve-phap-su-mu-ai-chet-gio-tay-15729439018211.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-9 other__title">
+                    <p>
+                      [123Phim] NHẬP MÃ 'PSM30K' - Giảm ngay 30k khi đặt vé Pháp
+                      Sư Mù: Ai Chết Giơ Tay
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-2 other__img">
+                    <a href="">
+                      <img
+                        src="imgs/news/khuyenmai/mega-gs-mot-doa-hoa-thay-ngan-loi-yeu-15713106082164.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <div class="col-md-9 other__title">
+                    <p>[Mega GS] Một đoá hoa thay ngàn lời yêu</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="xemthem">
+            <button class="btn btn__more">XEM THÊM</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="app__advertise__wrapper">
+      <div id="app__advertise">
+        <div class="main__advertiser">
+          <div class="row">
+            <div class="col-md-6 left text-left">
+              <p class="left__title">Ứng dụng tiện lợi dành cho</p>
+              <p class="left__title">người yêu điện ảnh</p>
+              <br />
+              <p class="left__content">
+                Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp
+                và đổi quà hấp dẫn.
+              </p>
+              <br />
+              <button class="btn left__btn">App miễn phí - Tải về ngay!</button>
+              <p class="left__ios__android">
+                TIX có hai phiên bản
+                <a
+                  target="_blank"
+                  href="https://itunes.apple.com/us/app/123phim-mua-ve-lien-tay-chon/id615186197?mt=8"
+                  >iOS</a
+                >
+                &amp;&nbsp;<a
+                  target="_blank"
+                  href="https://play.google.com/store/apps/details?id=vn.com.vng.phim123"
+                  >Android</a
+                >
+              </p>
+            </div>
+            <div class="col-md-6 right">
+              <img
+                class="phone__img"
+                src="./imgs/mobile.png"
+                alt="Loading..."
+              />
+              <div class="ad__slider__wrapper">
+                <div class="ad__list">
+                  <div><img src="./imgs/slick/slide1.jpg" alt="" /></div>
+                  <div><img src="./imgs/slick/slide2.jpg" alt="" /></div>
+                  <div><img src="./imgs/slick/slide3.jpg" alt="" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div id="footer__wrapper">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="title">TIX</p>
+            <div class="row left">
+              <div class="col-md-6">
+                <a href="">FAQ</a>
+                <a href="">Brand Guidelines</a>
+              </div>
+              <div class="col-md-6">
+                <a href="">Thỏa thuận sử dụng</a>
+                <a href="">Chính sách bảo mật</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="title">ĐỐI TÁC</div>
+            <div class="row col-md-12 partner__line">
+              <a href="">
+                <img src="./imgs/doitac/cgv.png" alt="" class="icon__partner" />
+              </a>
+              <a href="">
+                <img src="./imgs/doitac/bhd.png" alt="" class="icon__partner" />
+              </a>
+              <a href="">
+                <img
+                  src="./imgs/doitac/galaxycine.png"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./imgs/doitac/cinestar.png"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./imgs/doitac/404b8c4b80d77732e7426cdb7e24be20.png"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+            </div>
+            <div class="row col-md-12 partner__line">
+              <a href="">
+                <img
+                  src="./imgs/doitac/megags.png"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+              <a href="">
+                <img src="./imgs/doitac/bt.jpg" alt="" class="icon__partner" />
+              </a>
+              <a href="">
+                <img
+                  src="./imgs/doitac/dongdacinema.png"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./imgs/doitac/TOUCH.png"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+              <a href="">
+                <img src="./imgs/doitac/cnx.jpg" alt="" class="icon__partner" />
+              </a>
+            </div>
+            <div class="row col-md-12 partner__line">
+              <a href="">
+                <img
+                  src="./imgs/doitac/STARLIGHT.png"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./imgs/doitac/dcine.png"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./imgs/doitac/zalopay_icon.png"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./imgs/doitac/payoo.jpg"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+              <a href="">
+                <img src="./imgs/doitac/VCB.png" alt="" class="icon__partner" />
+              </a>
+            </div>
+            <div class="row col-md-12 partner__line">
+              <a href="">
+                <img
+                  src="./imgs/doitac/AGRIBANK.png"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./imgs/doitac/VIETTINBANK.png"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+              <a href="">
+                <img src="./imgs/doitac/IVB.png" alt="" class="icon__partner" />
+              </a>
+              <a href="">
+                <img
+                  src="./imgs/doitac/123go.png"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./imgs/doitac/laban.png"
+                  alt=""
+                  class="icon__partner"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-md-6 social__app">
+                <div class="title">MOBILE APP</div>
+                <a href="" class="social__app__content">
+                  <img src="./imgs/doitac/apple-logo.png" alt="" />
+                </a>
+                <a href="" class="social__app__content">
+                  <img src="./imgs/doitac/android-logo.png" alt="" />
+                </a>
+              </div>
+              <div class="col-md-6 social__app">
+                <div class="title">SOCIAL</div>
+                <a href="" class="social__app__content">
+                  <img src="./imgs/doitac/facebook-logo.png" alt="" />
+                </a>
+                <a href="" class="social__app__content">
+                  <img src="./imgs/doitac/zalo-logo.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="row footer__zion">
+          <div class="col-md-1 footer__img">
+            <img
+              class="zion__img"
+              src="./imgs/endFooter/zion-logo.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-md-9 footer__zion__content">
+            <span class="title__zion"
+              >TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</span
+            >
+            <span
+              >Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ
+              Chí Minh, Việt Nam.</span
+            >
+            <span>
+              Giấy chứng nhận đăng ký kinh doanh số: 0101659783,
+              <br />
+              đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế
+              hoạch và đầu tư Thành phố Hồ Chí Minh cấp.
+            </span>
+            <span
+              >Số Điện Thoại (Hotline): 1900&nbsp;545&nbsp;436
+              <br />
+              Email: <a href="" style="color: #fb4226">support@tix.vn</a></span
+            >
+          </div>
+          <div class="col-md-2 footer__img">
+            <a href="">
+              <img
+                src="./imgs/endFooter/d1e6bd560daa9e20131ea8a0f62e87f8.png"
+                alt=""
+                class="boCongThuong__img"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(".ad__list").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false,
+      });
+    </script>
+<!-- Tuan -->
+
+<!-- VenoBox -->
+      <script type="text/javascript" src="./library/venoBox/venobox.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".venobox").venobox();
+      });
+    </script>
+    <!-- Venobox -->
+    <!-- Start slick-carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"></script>
+  <script src="./library/Slick_Carousel/slick.min.js"></script>
+
+<script type="text/javascript">
+    
+$('.my_slick').slick({
+  rows:2,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  // autoplay: true,
+  accessibility: true,
+  dots: true,
+  arrows: true,
+  dots: true,
+  infinite: true,
+  prevArrow: "<img class='a-left control-c prev slick-prev' src='../../img/back-session.png'>",
+  nextArrow: "<img class='a-right control-c next slick-next' src='../../img/next-session.png'>",
+  // autoplay: true,
+  // autoplaySpeed: 2000,
+  responsive: [
+        
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            rows:1,
+            arrows: false
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+});
+  </script>
+  <script type="text/javascript">
+    
+$('.my_slick2').slick({
+  rows:2,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  // autoplay: true,
+  accessibility: true,
+  dots: true,
+  arrows: true,
+  
+  infinite: true,
+  prevArrow: "<img class='a-left control-c prev slick-prev' src='../../img/back-session.png'>",
+  nextArrow: "<img class='a-right control-c next slick-next' src='../../img/next-session.png'>",
+  // autoplay: true,
+  // autoplaySpeed: 2000,
+  responsive: [
+        
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            rows:1,
+              arrows: false
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+});
+  </script>
+      <!-- End slick-carousel -->
+<!--Tuan-->
+
+
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

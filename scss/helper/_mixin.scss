@@ -1,0 +1,15 @@
+@mixin cinemaName($name) {
+    @if $name == "bhd" {
+        color: #8bc541;
+    } @else if $name == 'cinestar' {
+        color: #df0d7a;
+    } @else if $name == "dongda" {
+        color: #9c9c9c;
+    } @else if $name == 'mega' {
+        color: #e5a813;
+    } @else if $name == 'dcine' {
+        color: #000;
+    } @else {
+        color: #ca4137;
+    }
+}

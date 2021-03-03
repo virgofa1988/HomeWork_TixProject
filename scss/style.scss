@@ -1,0 +1,13 @@
+@import "./base/reset";
+@import "./helper/variables";
+@import "./helper/mixin";
+@import "./layout/home";
+
+
+@import "../helper/mixin";
+@import "../helper/variable";
+@import 'components/header';
+@import "../scss/components/owlcarousel";
+@import "./components/slickcarousel";
+@import "../layout/index";
+@import "../scss/base/reset";

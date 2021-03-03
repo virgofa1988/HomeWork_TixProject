@@ -1,0 +1,27 @@
+header {
+     .weblogo{
+        height: 50px;
+    }
+    .navbar-collapse{
+        justify-content: flex-end;
+        .dropdown-item{
+            transition: all 0.5s;
+        }
+        .dropdown-item:hover{
+            @include dropdownitemhover();
+        }
+    }
+    .avatar{
+        height: 30px;
+        border-radius: 50%;
+    }
+    .nav-link{
+        transition: all 0.5s;
+        font-weight: 400;
+    }
+    .nav-link.center:hover{
+        color: red!important;
+        cursor: pointer!important;
+    }
+}
+

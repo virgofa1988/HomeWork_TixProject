@@ -1,0 +1,67 @@
+@mixin carouselArrow {
+   position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 100px;
+    z-index: 2;
+    opacity: .5;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@mixin playbutton{
+      z-index: 10;
+       color: white;
+       position: absolute;
+       top: 50%;
+              left: 50%;
+       transform: translate(-50%,-50%);
+}
+@mixin dropdownitemhover {
+     background-color:#03a9f4;
+            color: white;
+}
+@mixin nav_tabs {
+       display: flex;
+       justify-content: space-evenly;
+       border-bottom:none;
+}
+@mixin C16{
+    padding: 0% 3% 0% 3%;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+@mixin  P {
+       padding: 0% 3% 0% 3%;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+@mixin arrowprev786{
+       @media screen and (max-width:786px) {
+            
+            left:  -20px;
+            width: 30px;
+            height: 30px;
+       
+       }
+}
+@mixin arrownext786{
+       @media screen and (max-width:786px) {
+            
+            right:  -20px;
+            width: 30px;
+            height: 30px;
+       
+       }
+}
